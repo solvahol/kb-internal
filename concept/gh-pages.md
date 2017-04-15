@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: kb-article
 title: What, really, will GitHub Pages render?
 date: 2017-04-15 13:00:00
 visibility: public

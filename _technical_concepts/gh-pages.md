@@ -6,10 +6,9 @@ visibility: public
 tags:
 ---
 
-Here's some content.
+Here's some content. It's just a stub, really, for a public article.
 
-It's just a stub, really.
-
+<!--more-->
 * Created initially with front matter, as .md, with no permalink
   * It renders the markdown, presents with .html extension
 * Added `visibility: public` to front matter

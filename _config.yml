@@ -6,13 +6,10 @@ excerpt_separator: <!--more-->
 collections:
   concepts:
     output: true
-    permalink: concepts/:title.html
   how-tos:
     output: true
-    permalink: how-tos/:title.html
   solutions:
     output: true
-    permalink: solutions/:title.html
 
 defaults:
   - scope:

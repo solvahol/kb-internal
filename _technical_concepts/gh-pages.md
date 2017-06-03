@@ -6,7 +6,6 @@ visibility: public
 tags:
 ---
 
-# {{ page.title }}
 Here's some content.
 
 It's just a stub, really.

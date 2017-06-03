@@ -6,7 +6,6 @@ visibility:
 tags:
 ---
 
-# {{ page.title }}
 Pretend we're talking about something internal-only here. Not public.
 
 * Created with empty `visibility:`

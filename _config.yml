@@ -4,29 +4,29 @@ theme: jekyll-theme-minimal
 excerpt_separator: <!--more-->
 
 collections:
-  technical_concepts:
+  concepts:
     output: true
-    permalink: /technical/concepts/:title.html
-  technical_how-tos:
+    permalink: /concepts/:title.html
+  how-tos:
     output: true
-    permalink: /technical/how-tos/:title.html
-  technical_solutions:
+    permalink: /how-tos/:title.html
+  solutions:
     output: true
-    permalink: /technical/solutions/:title.html
+    permalink: /solutions/:title.html
 
 defaults:
   - scope:
       path: ""
-      type: technical_concepts
+      type: concepts
     values:
       layout: kb-article
   - scope:
       path: ""
-      type: technical_how-tos
+      type: how-tos
     values:
       layout: kb-article
   - scope:
       path: ""
-      type: technical_solutions
+      type: solutions
     values:
       layout: kb-article

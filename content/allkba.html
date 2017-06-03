@@ -9,7 +9,7 @@ permalink: allkba.html
     <ul>
     {% for kb-article in site.concepts %}
         <li>
-            <strong><a href="{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
+            <strong><a href="{{ site.github.url }}{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
             {{ kb-article.excerpt }}
         </li>
     {% endfor %}
@@ -23,7 +23,7 @@ permalink: allkba.html
     <ul>
     {% for kb-article in site.how-tos %}
         <li>
-            <strong><a href="{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
+            <strong><a href="{{ site.github.url }}{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
             {{ kb-article.excerpt }}
         </li>
     {% endfor %}
@@ -37,7 +37,7 @@ permalink: allkba.html
     <ul>
     {% for kb-article in site.solutions %}
         <li>
-            <strong><a href="{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
+            <strong><a href="{{ site.github.url }}{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
             {{ kb-article.excerpt }}
         </li>
     {% endfor %}

@@ -5,6 +5,7 @@ permalink: allkba.html
 ---
 
 {% if site.technical_concepts.size > 0 %}
+    <h2>Technical - Concept</h2>
     <ul>
     {% for kb-article in site.technical_concepts %}
         <li>
@@ -14,5 +15,33 @@ permalink: allkba.html
     {% endfor %}
     </ul>
 {% else %}
-    <p>No kb-articles yet!</p>
+    <p>No concept articles yet!</p>
+{% endif %}
+
+{% if site.technical_how-tos.size > 0 %}
+    <h2>Technical - How-To</h2>
+    <ul>
+    {% for kb-article in site.technical_how-tos %}
+        <li>
+            <strong><a href="{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
+            {{ kb-article.excerpt }}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No how-to articles yet!</p>
+{% endif %}
+
+{% if site.technical_solutions.size > 0 %}
+    <h2>Technical - Solution</h2>
+    <ul>
+    {% for kb-article in site.technical_solutions %}
+        <li>
+            <strong><a href="{{ kb-article.url }}">{{ kb-article.title }}</a></strong> / <time datetime="{{ kb-article.date | date_to_xmlschema }}">{{ kb-article.date | date: '%b %-d, %Y'}}</time>
+            {{ kb-article.excerpt }}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No solution articles yet!</p>
 {% endif %}

@@ -1,15 +1,32 @@
 title: Solvahol Knowledge Base
 description: A collection of concepts, how-to's, FAQs, and solutions related to Solvahol products and services
 theme: jekyll-theme-minimal
+excerpt_separator: <!--more-->
 
 collections:
   technical_concepts:
     output: true
     permalink: /technical/concepts/:title.html
+  technical_how-tos:
+    output: true
+    permalink: /technical/how-tos/:title.html
+  technical_solutions:
+    output: true
+    permalink: /technical/solutions/:title.html
 
 defaults:
   - scope:
       path: ""
       type: technical_concepts
+    values:
+      layout: kb-article
+  - scope:
+      path: ""
+      type: technical_how-tos
+    values:
+      layout: kb-article
+  - scope:
+      path: ""
+      type: technical_solutions
     values:
       layout: kb-article

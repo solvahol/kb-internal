@@ -3,6 +3,9 @@ description: A collection of concepts, how-to's, FAQs, and solutions related to 
 theme: jekyll-theme-minimal
 excerpt_separator: <!--more-->
 
+gems:
+  - jekyll-mentions
+
 collections:
   concepts:
     output: true
